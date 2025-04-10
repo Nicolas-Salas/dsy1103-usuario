@@ -4,9 +4,23 @@ spring:
   datasource:
     hikari:
       connectionTimeout: 5000
+<<<<<<< HEAD
+=======
+      maximumPoolSize: 2
+>>>>>>> fdaa3633e0ca6ab6efd051d229b8ba414a6a212f
     username: osca.riverap
     password: 8}-g3S}_%Ya@4M;v
     url: jdbc:postgresql://35.223.30.52:5432/sandbox-clase
 
 server:
+<<<<<<< HEAD
   port: 8081
+=======
+  port: 8081
+
+logging:
+  level:
+    root: warn
+    cl:
+      duoc: debug
+>>>>>>> fdaa3633e0ca6ab6efd051d229b8ba414a6a212f
