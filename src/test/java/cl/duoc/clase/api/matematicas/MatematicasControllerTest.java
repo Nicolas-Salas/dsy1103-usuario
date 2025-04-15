@@ -1,6 +1,9 @@
 package cl.duoc.clase.api.matematicas;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+import cl.duoc.clase.usuario.api.matematicas.MatematicasController;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -14,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@SpringBootTest
+@SpringBootTest (classes = MatematicasController.class)
 @AutoConfigureMockMvc
 @ActiveProfiles
 class MatematicasControllerTest {
