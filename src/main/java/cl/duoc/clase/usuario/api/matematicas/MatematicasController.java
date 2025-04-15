@@ -45,6 +45,6 @@ public class MatematicasController {
         if (numero2 == 0) {
             return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
         }
-            return new ResponseEntity<>(numero1 / numero2, HttpStatus.OK);
+            return new ResponseEntity<>(numero1/numero2, HttpStatus.OK);
         }
 }
