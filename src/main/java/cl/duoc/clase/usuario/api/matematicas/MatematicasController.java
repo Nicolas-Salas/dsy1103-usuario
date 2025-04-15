@@ -42,6 +42,9 @@ public class MatematicasController {
     public ResponseEntity<Integer> division(
         @PathVariable("num1") int numero1, 
         @PathVariable("num2") int numero2) {
+        if (numero2 == 0) {
+            return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
+        }
             return new ResponseEntity<>(numero1 / numero2, HttpStatus.OK);
         }
 }
